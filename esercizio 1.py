@@ -6,21 +6,14 @@ def random_select_nums(n_list, n):
 #per ogni elemento della lista ciclato,se esiste nella lista un elemento uguale, bisogna rimuoverlo ma solo una volta
 def remove_doubles(list):
     for elements in list:
-        if list.count (elements) >=2:
-            list.remove (elements)
+        if list.count(elements) >= 2:
+            del list [(list.index(elements))]
+        
     return list
+    
+
+
             
-             
-
-
-
-
-
-
-
-
-
-
 l = []
 n = int(input("inserisci quanti elementi vuoi inserire nella lista: "))
 while n > len(l):
