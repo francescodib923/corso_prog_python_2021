@@ -6,17 +6,34 @@
 #     l2.append (0)
 
 
+# # print (l)
+# l = []
+# def multidimensional (list_element):
+#     nums = []
+#     for i in range (3):
+#         nums.append([])
+#         for j in range(3):
+#             nums [i].append(0)
+#     return nums
+# l = multidimensional (l)
 # print (l)
+
 l = []
 def multidimensional (list_element):
     nums = []
-    for i in range (3):
-        nums.append([])
-        for j in range(3):
-            nums [i].append(0)
+    for i in range (4):
+        nums.append ([])
+        for j in range (4):
+            nums [i].append (j+1)
     return nums
+
 l = multidimensional (l)
 print (l)
+
+
+
+
+
 
 
 
